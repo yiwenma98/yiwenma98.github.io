@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{
+	overflow-y: hidden;
+	overflow-x: hidden;
+	animation: box3 both 3s;
+}
+@keyframes box3{
+	0%{
+		overflow-y: hidden;
+	}
+	99%{
+		overflow-y: hidden;
+	}
+	100%{
+		overflow-y: inherit;
+	}
+}
+#zong{
+	opacity: 0;
+	animation: zong both 3s;
+}
+@keyframes zong{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+#jiazai-img{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	z-index: 999999;
+}
+#z{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 999998;
+	background: rgba(0,0,0,0.5);
+	animation: z both 3s;
+}
+@keyframes z{
+	0%{
+		opacity: 1;
+	}
+	90%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
